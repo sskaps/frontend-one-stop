@@ -1,28 +1,28 @@
 <template>
     <div class="indexlayout-right-footer">
-      <div class="footer-links">
-        <a
-          href="http://tsv2-demo.admin-element-vue.kerong.cc"
-          target="_blank"
-          rel="noreferrer"
-        >
-          DEMO
-        </a>
-        <a
-          href="https://github.com/lqsong/admin-element-vue"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Github
-        </a>
-        <a href="http://kerong.cc" target="_blank" rel="noreferrer">
-          博客
-        </a>
-        <a href="http://www.wyxgn.com" target="_blank" rel="noreferrer">
-          网页小功能
-        </a>
-      </div>
-      <div>Copyright © 2020 kerong.CC, All Rights Reserved</div>
+      <!--<div class="footer-links">-->
+        <!--<a-->
+          <!--href="http://tsv2-demo.admin-element-vue.kerong.cc"-->
+          <!--target="_blank"-->
+          <!--rel="noreferrer"-->
+        <!--&gt;-->
+          <!--DEMO-->
+        <!--</a>-->
+        <!--<a-->
+          <!--href="https://github.com/lqsong/admin-element-vue"-->
+          <!--target="_blank"-->
+          <!--rel="noreferrer"-->
+        <!--&gt;-->
+          <!--Github-->
+        <!--</a>-->
+        <!--<a href="http://kerong.cc" target="_blank" rel="noreferrer">-->
+          <!--博客-->
+        <!--</a>-->
+        <!--<a href="http://www.wyxgn.com" target="_blank" rel="noreferrer">-->
+          <!--网页小功能-->
+        <!--</a>-->
+      <!--</div>-->
+      <div>Copyright © Glodon Company Limited 1998-2020 All Rights Reserved. </div>
     </div>
 </template>
 <script lang="ts">

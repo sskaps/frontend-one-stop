@@ -1,5 +1,5 @@
 import settings from "@/config/settings";
-import { RoutesDataItem } from "@/utils/routes";
+import {RoutesDataItem} from "@/utils/routes";
 import BlankLayout from '@/layouts/BlankLayout.vue';
 
 const IndexLayoutRoutes: Array<RoutesDataItem> = [
@@ -22,6 +22,66 @@ const IndexLayoutRoutes: Array<RoutesDataItem> = [
     ]
   },
   {
+    icon: 'files',
+    title: 'index-layout.menu.demand',
+    path: '/demand',
+    redirect: '/demand/all',
+    component: BlankLayout,
+    children: [
+      {
+        icon: 'list',
+        title: 'index-layout.menu.demand.all',
+        path: 'all',
+        component: () => import('@/views/demand/all/index.vue'),
+      }
+    ]
+  },
+  {
+    icon: 'files',
+    title: 'index-layout.menu.project',
+    path: '/project',
+    redirect: '/project/all',
+    component: BlankLayout,
+    children: [
+      {
+        icon: 'list',
+        title: 'index-layout.menu.project.all',
+        path: 'all',
+        component: () => import('@/views/project/all/index.vue'),
+      }
+    ]
+  },
+  {
+    icon: 'files',
+    title: 'index-layout.menu.feedback',
+    path: '/feedback',
+    redirect: '/feedback/all',
+    component: BlankLayout,
+    children: [
+      {
+        icon: 'list',
+        title: 'index-layout.menu.feedback.all',
+        path: 'all',
+        component: () => import('@/views/feedback/all/index.vue'),
+      }
+    ]
+  },
+  {
+    icon: 'files',
+    title: 'index-layout.menu.service',
+    path: '/service',
+    redirect: '/service/all',
+    component: BlankLayout,
+    children: [
+      {
+        icon: 'list',
+        title: 'index-layout.menu.service.all',
+        path: 'all',
+        component: () => import('@/views/service/all/index.vue'),
+      }
+    ]
+  },
+  {
     icon: 'permissions',
     title: 'index-layout.menu.roles',
     path: '/roles',
@@ -32,21 +92,21 @@ const IndexLayoutRoutes: Array<RoutesDataItem> = [
         icon: 'detail',
         title: 'index-layout.menu.roles.all',
         path: 'all',
-        component: ()=> import('@/views/roles/all/index.vue'),
+        component: () => import('@/views/roles/all/index.vue'),
       },
       {
         icon: 'detail',
         roles: ['user'],
         title: 'index-layout.menu.roles.user',
         path: 'user',
-        component: ()=> import('@/views/roles/user/index.vue'),
+        component: () => import('@/views/roles/user/index.vue'),
       },
       {
         icon: 'detail',
         roles: ['test'],
         title: 'index-layout.menu.roles.test',
         path: 'test',
-        component: ()=> import('@/views/roles/test/index.vue'),
+        component: () => import('@/views/roles/test/index.vue'),
       }
     ]
   }
